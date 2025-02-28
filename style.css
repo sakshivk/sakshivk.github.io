@@ -1,43 +1,31 @@
-/* Reset default browser styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Global styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-/* Navigation bar */
+/* Header & Navigation */
 header {
-    background-color: #004080;
+    background: #004080;
     color: white;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
-
-nav h1 {
-    font-size: 24px;
+    padding: 15px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -45,40 +33,24 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Hero section */
-.hero {
-    background-color: #0073e6;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-/* Content sections */
+/* Sections */
 section {
     width: 80%;
-    margin: 40px auto;
+    margin: 30px auto;
+    background: white;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
+h2 {
     color: #004080;
     margin-bottom: 10px;
 }
@@ -88,15 +60,11 @@ ul {
     margin-left: 20px;
 }
 
-li {
-    margin-bottom: 8px;
-}
-
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #004080;
+    padding: 15px;
+    background: #004080;
     color: white;
     position: relative;
     bottom: 0;
@@ -118,11 +86,6 @@ footer a:hover {
         flex-direction: column;
         gap: 10px;
     }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
     section {
         width: 90%;
     }
