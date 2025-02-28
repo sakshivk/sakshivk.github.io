@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Responsive Navigation Toggle (For future use)
+    // Mobile Navigation Toggle
     const navToggle = document.createElement('button');
     navToggle.textContent = '☰';
     navToggle.classList.add('nav-toggle');
