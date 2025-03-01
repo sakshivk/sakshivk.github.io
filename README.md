@@ -135,11 +135,12 @@ This project highlights how ChatGPT can accelerate web development by simplifyin
 
 🌐 Live Website
 
-sakshivk.github.io
+https://sakshivk.github.io
 
 
 ---
 
 Created by: Sakshi Sharma 
+
 Guided by: ChatGPT
 
