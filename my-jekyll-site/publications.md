@@ -6,12 +6,10 @@ permalink: /publications/
 
 # Publications  
 
-1. **"Title of your Research Paper 1"**  
-   - Published in [Journal Name]  
-   - Summary: A brief summary of the paper and its significance.  
-   - [Link to paper](#)
+## Publications
 
-2. **"Title of your Research Paper 2"**  
-   - Published in [Conference Name]  
-   - Summary: A brief summary of the paper and its impact.  
-   - [Link to paper](#)
+- "Time-Efficient Auditable Blockchain-Based Pharma Drug Supply Chain" - ICET 2021  
+- "Consensus Methods: Analyzation for Blockchain Technology" - IJME 2021  
+- "Health Chain - Blockchain-based EHR System" - Measurement: Sensors 2023  
+- "Facial Emotion Classification using Deep Learning" - ICDCECE 2023  
+- Many More...
