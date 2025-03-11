@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Welcome to Sakshi Sharma's Jekyll Site
+title: Welcome to Sakshi Sharma's Portfolio
 ---
 
-# Welcome to Sakshi Sharma's Jekyll-Powered Site!  
+# Welcome to Sakshi Sharma's Portfolio
 
 This is a dynamic and customizable space where I share insights, projects, and resources. Whether you're here for **technical blogs**, **research updates**, or **learning materials**, you'll find something valuable.  
 
