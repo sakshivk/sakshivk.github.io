@@ -1,33 +1,20 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Sakshi Sharma
 email: imsakshivk@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >- 
+  AI educator, researcher, and developer working on projects like CAL, PES, and DDD. 
+  Passionate about enhancing education through technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
+linkedin_url: https://www.linkedin.com/in/sakshivk/
+
+# Social links (you can add more)
+social_links:
+  twitter: https://twitter.com/your_username
+  github: https://github.com/your_username
+  linkedin: https://www.linkedin.com/in/sakshivk/
+  email: imsakshivk@gmail.com
 
 # Build settings
 remote_theme: cotes2020/jekyll-theme-chirpy
@@ -53,3 +40,27 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Custom page titles and descriptions
+academics:
+  title: Academics
+  description: Learn more about Sakshi Sharma's teaching and certifications.
+
+research:
+  title: Research
+  description: Explore Sakshi Sharma's research projects and areas of interest.
+
+publications:
+  title: Publications
+  description: Discover Sakshi Sharma's academic publications and research papers.
+
+# Navigation links (you can customize them)
+nav:
+  - title: Home
+    url: /
+  - title: Academics
+    url: /academics/
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
