@@ -8,7 +8,7 @@ title: Welcome to Sakshi Sharma's Jekyll Site
 This is a dynamic and customizable space where I share insights, projects, and resources. Whether you're here for **technical blogs**, **research updates**, or **learning materials**, you'll find something valuable.  
 
 ## About Me  
-I am an experienced educator and researcher in the field of AI, education technology, and interactive learning systems. Currently, I work as a research scholar at IIT Ropar and a faculty member, teaching Python programming and AI in education.  
+I am an experienced educator and researcher in the field of AI, education technology, and interactive learning systems. Currently, I work as a research scholar at IIT Ropar and as a Resource Person for FDP's teaching Python programming and AI in education.  
 
 You can explore more about my academic and research contributions below.
 
