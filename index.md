@@ -1,7 +1,6 @@
 # Sakshi Sharma
 
 🎓 **Ph.D. Scholar** at [IIT Ropar]  
-🧠 AI Skill Development Head, [Annam.AI]  
 🏛️ Member, Dhananjaya Lab for Education Design (DLED)  
 📍 Focus: Educational Design, AI in Teaching & Learning, Faculty Development
 
@@ -25,8 +24,8 @@ I am currently pursuing my Ph.D. under the guidance of **Dr. Sudarshan Iyengar**
 ## 📫 Contact
 
 - ✉️ Email: sakshi.sharma@example.com  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/sakshi-sharma)  
-- 🧑‍💻 [GitHub](https://github.com/sakshi-sharma)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/sakshivk)  
+- 🧑‍💻 [GitHub](https://github.com/imsakshivk)  
 
 ---
 
