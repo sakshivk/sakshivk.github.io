@@ -1,0 +1,20 @@
+title: Sakshi Sharma
+email: 
+description: >- 
+  Ph.D. scholar in AI & Education | AIML
+baseurl: "" # e.g. /sakshi-site if hosting under a subpath
+url: "https://sakshivk.github.io" # replace with your GitHub Pages URL
+theme: minima
+
+# Optional social links
+social_links:
+  - name: GitHub
+    url: https://github.com/imsakshivk
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/sakshivk
+
+# Optional build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
