@@ -4,7 +4,9 @@ description: >-
   Ph.D. scholar in AI & Education | AIML
 baseurl: "" # e.g. /sakshi-site if hosting under a subpath
 url: "https://sakshivk.github.io" # replace with your GitHub Pages URL
-theme: minima
+
+remote_theme: pages-themes/minimal@v0.2.0
+
 
 # Optional social links
 social_links:
@@ -18,3 +20,4 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
