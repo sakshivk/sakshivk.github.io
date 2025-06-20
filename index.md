@@ -1,3 +1,8 @@
+---
+layout: home
+title: Home
+---
+
 # Sakshi Sharma
 
 🎓 **Ph.D. Scholar** at [IIT Ropar]  
