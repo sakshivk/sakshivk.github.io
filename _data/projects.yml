@@ -1,0 +1,34 @@
+- title: Spurti
+  anchor: spurti
+  short: Self-regulated learning engagement system that uses Spurti Points, rewards, and motivation signals to help students stay aware of their learning habits and complete the courses or studies they start.
+  url: /projects/#spurti
+  stack: MERN, Node/Express, React/Vite, MongoDB, learning analytics, motivation engine
+  status: Production deployment
+  timeline: May 2026 - Present
+  details:
+    - Built as a motivation and accountability layer for VLED Summership students, with SP Bank, student ledger, cohort ranking, rewards, and admin analytics.
+    - Integrated Zoom attendance, poll, and chat data into a transaction-based SP system covering 7,248 student records, 19 sessions, and 48,000+ SP transactions in the audited production state.
+    - Designed student-facing and admin-facing workflows to study whether timely rewards, visible progress, and engagement feedback can support self-regulated learning and course completion.
+- title: Spandan
+  anchor: spandan
+  short: Classroom attention and engagement concept using live questions and poll-style checks without breaking the flow of teaching.
+  url: /projects/#spandan
+  repo:
+  stack: Classroom engagement, live polls, question generation, learning feedback
+  status: Concept and classroom exploration
+  timeline: 2026
+  details:
+    - Explores how live classes can use lightweight question prompts to keep students attentive and connected to the teaching flow.
+    - Uses the idea of small milestones and in-session checks so classroom engagement becomes visible without turning the class into a separate testing activity.
+    - Grounded in VLED Summership discussions around attention, question generation, Zoom poll usage, and careful classroom interaction design.
+- title: Student Learning Blogs and Video Resources
+  anchor: student-learning-resources
+  short: Open learning resources for CSE students through blogs and video lectures.
+  url: /projects/#student-learning-resources
+  stack: Blogger, WordPress, YouTube, Google Sites
+  status: Active teaching support
+  timeline: 2017 - Present
+  details:
+    - Runs CSE learning blogs to share notes and subject-specific support material.
+    - Uses video lectures through the ICONIC BLOGGER channel.
+    - Built from classroom feedback and recurring student learning needs.

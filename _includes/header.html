@@ -1,0 +1,14 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Sakshi Sharma home">
+    <span class="brand-mark">SS</span>
+    <span>
+      <strong>Sakshi Sharma</strong>
+      <small>AI Education + Learning Analytics</small>
+    </span>
+  </a>
+  <nav aria-label="Primary navigation">
+    {% for item in site.data.nav %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>

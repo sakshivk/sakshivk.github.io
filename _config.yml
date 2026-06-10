@@ -1,24 +1,30 @@
 title: Sakshi Sharma
-email: 
-description: >- 
-  Ph.D. scholar in AI & Education | AIML
-baseurl: "" # e.g. /sakshi-site if hosting under a subpath
-url: "https://sakshivk.github.io" # replace with your GitHub Pages URL
+email: imsakshivk@gmail.com
+description: >-
+  Learning design, computing education, AI literacy, and learning analytics
+  portfolio of Sakshi Sharma, Ph.D. scholar in CSE at IIT Ropar.
+url: "https://sakshivk.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Kolkata
 
+author:
+  name: Sakshi Sharma
+  role: Ph.D. Scholar, Computer Science and Engineering, IIT Ropar
+  location: Himachal Pradesh, India
+  email: imsakshivk@gmail.com
+  github: https://github.com/imsakshivk
+  linkedin: https://www.linkedin.com/in/sakshivk
 
-remote_theme: "jekyll/minima@1e8a445"
-
-
-# Optional social links
-social_links:
-  - name: GitHub
-    url: https://github.com/imsakshivk
-  - name: LinkedIn
-    url: https://www.linkedin.com/in/sakshivk
-
-# Optional build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
