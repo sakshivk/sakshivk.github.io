@@ -10,13 +10,12 @@ print_resume: true
   <a class="btn secondary" href="{{ '/' | relative_url }}">Back to portfolio</a>
 </div>
 
-<article class="resume-page">
+<article class="resume-page resume-web">
   <header class="resume-top">
     <div>
       <p class="eyebrow">{{ site.data.profile.role_target }}</p>
       <h1>{{ site.data.profile.name }}</h1>
-      <p class="lead">{{ site.data.profile.headline }}</p>
-      <p>{{ site.data.profile.summary }}</p>
+      <p class="lead">{{ site.data.profile.summary }}</p>
       <div class="resume-contact">
         <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
         <a href="{{ site.data.profile.site }}">Portfolio</a>
@@ -30,85 +29,109 @@ print_resume: true
   <div class="resume-grid">
     <aside>
       <section class="resume-section">
-        <h2>Core Fit</h2>
-        <p>Learning design, AI literacy, faculty development, learning analytics, curriculum planning, assessment design, classroom facilitation, and education technology prototyping.</p>
+        <h2>Skills</h2>
+        <p class="resume-line"><span class="resume-label">Core</span>Leadership, communication, management, problem solving, learning design, faculty training, and learning analytics.</p>
       </section>
 
       <section class="resume-section">
-        <h2>Skills</h2>
-        <span class="resume-pill">Learning Design</span>
-        <span class="resume-pill">AI Literacy</span>
-        <span class="resume-pill">Learning Analytics</span>
-        <span class="resume-pill">Python</span>
-        <span class="resume-pill">Java</span>
-        <span class="resume-pill">HTML/CSS/JS</span>
-        <span class="resume-pill">R</span>
-        <span class="resume-pill">GitHub</span>
-        <span class="resume-pill">WordPress</span>
-        <span class="resume-pill">Google Workspace</span>
-        <span class="resume-pill">Zoho</span>
-        <span class="resume-pill">ERP/CRM</span>
+        <h2>Technical Skills</h2>
+        <p class="resume-line">Python, Java, HTML, CSS, JavaScript, R, Windows, Linux, VMware VirtualBox, Microsoft Office, Google Workspace, WordPress, GitHub, ERP/CRM, Zoho, Anaconda, NetBeans, Eclipse, and Dreamweaver.</p>
+      </section>
+
+      <section class="resume-section">
+        <h2>Training</h2>
+        <p class="resume-line">Cyber Security Foundation, Network Security Fundamentals, Cloud Security Fundamentals, and Security Operation Fundamentals through Palo Alto - EduSkill.</p>
+      </section>
+
+      <section class="resume-section">
+        <h2>Languages</h2>
+        <table class="language-table">
+          <thead><tr><th></th><th>R</th><th>W</th><th>S</th></tr></thead>
+          <tbody>
+            <tr><td>English</td><td>Y</td><td>Y</td><td>Y</td></tr>
+            <tr><td>Hindi</td><td>Y</td><td>Y</td><td>Y</td></tr>
+            <tr><td>Punjabi</td><td>Y</td><td>N</td><td>Y</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </aside>
+
+    <main>
+      <div class="resume-callout">
+        <strong>Profile focus:</strong> Learning experience design, AI-enabled teaching workflows, faculty enablement, classroom feedback systems, learning analytics, and coordination between pedagogy and product development.
+      </div>
+
+      <section class="resume-section">
+        <h2>Experience</h2>
+        {% for item in site.data.experience %}
+          <div class="resume-entry">
+            <h3>{{ item.role }}, {{ item.organization }}</h3>
+            <p class="resume-meta"><strong>{{ item.period }}</strong> <a class="plus-link" href="{{ item.url | absolute_url }}" aria-label="Open detailed experience">+</a></p>
+            <p class="experience-copy">{{ item.summary }}</p>
+          </div>
+        {% endfor %}
+      </section>
+
+      <section class="resume-section">
+        <h2>Projects</h2>
+        {% for project in site.data.projects %}
+          <div class="resume-entry">
+            <h3>{{ project.title }}</h3>
+            <p class="experience-copy">{{ project.short }} <a class="plus-link" href="{{ project.url | absolute_url }}" aria-label="Open project details">+</a></p>
+          </div>
+        {% endfor %}
       </section>
 
       <section class="resume-section">
         <h2>Education</h2>
         {% for edu in site.data.education %}
-          <h3>{{ edu.degree }}</h3>
-          <p><strong>{{ edu.institution }}</strong> | {{ edu.period }}</p>
-          <p class="resume-note">{{ edu.detail }}</p>
+          <div class="resume-entry">
+            <h3>{{ edu.degree }}</h3>
+            <p class="resume-meta"><strong>{{ edu.institution }}</strong> | {{ edu.period }}</p>
+            <p class="experience-copy">{{ edu.detail }}</p>
+          </div>
         {% endfor %}
       </section>
 
       <section class="resume-section">
-        <h2>Languages</h2>
-        <p>English, Hindi, and Punjabi.</p>
-      </section>
-    </aside>
-
-    <main>
-      <section class="resume-section">
-        <h2>Experience</h2>
-        {% for item in site.data.experience %}
-          <h3>{{ item.role }}, {{ item.organization }}</h3>
-          <p><strong>{{ item.period }}</strong> | <a href="{{ item.url | absolute_url }}">More details</a></p>
-          <ul>
-            {% for point in item.highlights limit:2 %}
-              <li>{{ point }}</li>
-            {% endfor %}
-          </ul>
-        {% endfor %}
-      </section>
-
-      <section class="resume-section">
-        <h2>Selected Projects</h2>
-        {% for project in site.data.projects %}
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.short }} <a href="{{ project.url | absolute_url }}">Open</a></p>
-        {% endfor %}
+        <h2>Teaching and FDPs</h2>
+        <p class="experience-copy"><strong>Courses:</strong> GE103 Introduction to Programming and Data Structures, CS101 Discrete Mathematics, GE107 Tinkering Lab.</p>
+        <p class="experience-copy"><strong>FDPs:</strong> ICT tools, cyber security, blockchain/CPS, Arduino-based system design, and data science using Python. <a class="plus-link" href="{{ '/teaching/' | absolute_url }}" aria-label="Open teaching details">+</a></p>
       </section>
 
       <section class="resume-section">
         <h2>Publications and Research Outputs</h2>
-        <ul>
-          {% for paper in site.data.publications limit:6 %}
-            <li>{{ paper.title }}. <em>{{ paper.venue }}</em>. <a href="{{ paper.url | absolute_url }}">Open</a></li>
-          {% endfor %}
-        </ul>
-        <p><a href="{{ '/publications/' | absolute_url }}">Complete publications list</a></p>
+        {% for paper in site.data.publications limit:6 %}
+          <div class="resume-entry">
+            <p class="resume-line"><strong>{{ paper.title }}</strong>. <em>{{ paper.venue }}</em>. <a class="plus-link" href="{{ paper.url | absolute_url }}" aria-label="Open publication details">+</a></p>
+          </div>
+        {% endfor %}
+        <p class="resume-copy"><a href="{{ '/publications/' | absolute_url }}">Complete publications list</a></p>
       </section>
 
       <section class="resume-section">
-        <h2>Patents, FDPs, and Trainings</h2>
-        <p>5 patent applications filed; FDPs in teaching during/post COVID-19, ICT tools, cyber security, blockchain/CPS, Arduino design, and data science using Python. <a href="{{ '/teaching/' | absolute_url }}">View details</a></p>
+        <h2>Patents</h2>
+        <div class="resume-stack">
+          <p class="resume-line">Toothpick Dispensing and Collecting Device, 202211010957.</p>
+          <p class="resume-line">Adjustable Cloth Hanging Device, 202211010972.</p>
+          <p class="resume-line">Onscreen Projection Device for Electronic Gadgets, 202211016518.</p>
+          <p class="resume-line">Sleeping Assistive and Monitoring Device, 202211018729.</p>
+          <p class="resume-line">Shoulder Exercise Training Device, 202311008902.</p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Guest Lectures and Outreach</h2>
+        <p class="experience-copy">Delivered guest lectures under the Integrated Scheme for School Education in Himachal Pradesh government schools on Python, web development, and computer networks for students in grades 9-12. Schools included GSSS Shahpur, GSSS Amni, GSSS Baroh, GSSS Pauria, GSSS Deha, GSSS Jeori, GSSS Nankhari, GSSS Matal, and GSSS Sarotri.</p>
       </section>
 
       <section class="resume-section">
         <h2>Achievements</h2>
-        <ul>
-          <li>Gold medalist in M.E. CSE and university topper across senior B.Tech semesters.</li>
-          <li>Represented KVS Chandigarh region in 42nd Nationals badminton, ranked 5th.</li>
-          <li>College-level chess gold medalist for four consecutive years.</li>
-        </ul>
+        <div class="resume-stack">
+          <p class="resume-line">Gold medalist in M.E. CSE and university topper across senior B.Tech semesters.</p>
+          <p class="resume-line">Represented KVS Chandigarh region in 42nd Nationals badminton, ranked 5th.</p>
+          <p class="resume-line">College-level chess gold medalist for four consecutive years.</p>
+        </div>
       </section>
     </main>
   </div>
